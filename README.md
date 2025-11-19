@@ -36,7 +36,7 @@ This repository contains all functions and reproducible example code needed to:
   * Misclassification model estimation
   * Main analysis dataset generation
   * Application of the semiparametric estimator
-  * Sensitivity analysis (η-grid)
+  * Sensitivity analysis ($η$-grid)
   * Cluster-bootstrap inference
   * CIF reconstruction and plotting
 
@@ -66,15 +66,11 @@ The proposed estimator:
 * yields marginal cause-specific regression effects
 * provides interpretable hazard ratios and CIFs
 
-### **3. Sensitivity Analysis (η-Shift)**
+### **3. Sensitivity Analysis ($η$-Shift)**
 
 To assess violations of transportability from the validation sample, we use:
 
-$logit(p_{jh}(η)) = logit(p_{jh}) + η$
-
-with
-
-$η ∈ [−0.5, −0.25, 0, 0.25, 0.5]$.
+$logit(p_{jh}(η)) = logit(p_{jh}) + η$ with $η$ ∈ {-0.5, -0.25, 0, 0.25, 0.5}.
 
 
 ### **4. Cluster Bootstrap**
