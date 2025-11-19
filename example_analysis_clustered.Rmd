@@ -37,7 +37,7 @@ Below, we load this simulation script, generate an **external validation dataset
 #--- Generate a list of external validation datasets --------------------------
 
 # Load data-generation script (extends Mpofu et al. 2020 to clustered setting)
-source("/Users/theofanisbalanos/Desktop/Paper_2/Balanos2025_Method_Illustration/simulate_data.R")
+source("simulate_data.R")
 
 # Arguments:
 # n           : number of datasets to generate
@@ -100,7 +100,7 @@ The estimation functions are defined in the external script `pseudo_likelihood_e
 
 ```{r, message=FALSE, warning=FALSE}
 #--- Load Mpofu et al. (2020) pseudo-likelihood estimation functions -----------
-source("/Users/theofanisbalanos/Desktop/Paper_2/Balanos2025_Method_Illustration/pseudo_likelihood_estimation_Mpofu.R")
+source("pseudo_likelihood_estimation_Mpofu.R")
 ```
 
 ### | Probability of Observing Cause 2 Given True Cause 1
@@ -164,7 +164,7 @@ The same clustered simulation procedure used for the external validation data (s
 #--- Generate the main (analysis) dataset -------------------------------------
 
 # Load the same simulation script (already loaded earlier, shown again for clarity)
-source("/Users/theofanisbalanos/Desktop/Paper_2/Balanos2025_Method_Illustration/simulate_data.R")
+source("simulate_data.R")
 
 # Create one main dataset with no internal validation (ds = 0)
 main_data_list <- data_list(
@@ -219,7 +219,7 @@ The estimation function `bssmle_clustered()` is defined in the external R script
 
 ```{r, message=FALSE, warning=FALSE}
 #--- Load the proposed semiparametric regression function ---------------------
-source("/Users/theofanisbalanos/Desktop/Paper_2/Balanos2025_Method_Illustration/bssmle_clustered.R")
+source("bssmle_clustered.R")
 
 #--- Fit the model to the main dataset ----------------------------------------
 fit_bssmle <- bssmle_clustered(dat_main, covariates = c("z1", "z2"))
