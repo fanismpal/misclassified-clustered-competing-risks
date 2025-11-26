@@ -1,7 +1,7 @@
 # **Semiparametric Marginal Regression for Clustered Competing Risks Data with Misclassified Causes of Failure Using External Validation**
 
 R code accompanying my dissertation:
-**“Semiparametric Marginal Regression for Clustered Competing Risks Data with Misclassified Causes of Failure.”**
+**“Semiparametric Marginal Regression for Clustered Competing Risks Data with Misclassified Causes of Failure Using External Validation.”**
 
 This repository contains all functions and reproducible example code needed to:
 
@@ -68,7 +68,7 @@ The proposed estimator:
 
 ### **3. Sensitivity Analysis ($η$-Shift)**
 
-To assess violations of transportability from the validation sample, we use:
+To examine violations of the transportability assumption, misclassification probabilities in the main dataset are adjusted via:
 
 $logit(p_{jh}(η)) = logit(p_{jh}) + η$ with $η$ ∈ {-0.5, -0.25, 0, 0.25, 0.5}.
 
@@ -141,6 +141,6 @@ Indiana University Indianapolis.
 Department of Biostatistics & Health Data Science
 Indiana University Indianapolis
 
-Email: tbalanos@iu.edu
+Email: **[tbalanos@iu.edu](mailto:tbalanos@iu.edu)**
 
 ---
